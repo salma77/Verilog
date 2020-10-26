@@ -1,4 +1,7 @@
 module DFF (clock, Q, D);
+	input D, clock;
+	output Q;
+	reg Q;
 	always @ (posedge clock)
-		Q = D;
+		assign Q = D;
 endmodule
